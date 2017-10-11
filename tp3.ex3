@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+		int n,diviseur;
+		float rac;
+		printf("donner un entier");
+		scanf("%d",&n);
+		rac=sqrt(n);
+		diviseur=2;
+		while((n%diviseur)!=0 && diviseur <=rac)
+		{
+			diviseur=diviseur+1;
+		}
+		if(diviseur>rac){
+	                 printf("le nombre est premier");
+		}
+		else {printf("le nombre n'est pas premier");
+		}
+		return 0;
+
+	}
