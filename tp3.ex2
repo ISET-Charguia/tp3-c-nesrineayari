@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+int a,b,r;
+printf("Entrez le premier entier positif:\t");
+scanf("%d",&a);
+printf("\nEntrez le deuxieme entier positif:\t");
+scanf("%d",&b);
+do{ 
+		r=a%b;
+		if(r==0)
+			{printf("le pgcd est:%d",b);}
+		else
+			{a=b;
+		        b=r;}
+	}while(a>b)
+
+	return 0 ;
+	
+}
