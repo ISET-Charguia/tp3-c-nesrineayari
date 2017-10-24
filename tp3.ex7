@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int n,dnum,q;
+	int base=1,bin=0;
+	printf("donner un entier decimal");
+	scanf("%d",&n);
+	dnum=n;
+	while(n>0){
+		q=n%2;
+		bin=bin+q*base;
+		base=base*10;}
+	printf("les nombre decimal est=%d",dnum);
+	printf("sont equivalant en binaire est=%d\n",bin);
+
+
+	}
